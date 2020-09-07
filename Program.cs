@@ -39,7 +39,30 @@ namespace proba
             }
             Console.WriteLine("Ennyiszer találtad el: {0}",talalat);
             */
-            Console.WriteLine("Hello world");
+            int[] tomb = new int[5];
+            int[] szamok = new int[5];
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                Console.Write("Írj be egy számot: ");
+                string be = Console.ReadLine();
+                szamok[i] = int.Parse(be);
+            }
+            Random r = new Random();
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                tomb[i] = r.Next(0, 91);
+            }
+            Array.Sort(tomb);
+            Array.Sort(szamok);
+            int talalt = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                if (tomb[i]==szamok[i])
+                {
+                    talalt++;
+                }
+            }
+            Console.WriteLine("A lottón ennyi számot találtál el {0} ",talalt);
             Console.ReadKey();
         }
     }
