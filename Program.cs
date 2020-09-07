@@ -10,7 +10,7 @@ namespace proba
     {
         static void Main(string[] args)
         {
-            Console.Write("Írj be egy számot ");
+            /*Console.Write("Írj be egy számot ");
             string be = Console.ReadLine();
             int[] tomb = new int[5];
             Random r = new Random();
@@ -38,6 +38,8 @@ namespace proba
                 Console.WriteLine("fasza vagy");
             }
             Console.WriteLine("Ennyiszer találtad el: {0}",talalat);
+            */
+            Console.WriteLine("Hello world");
             Console.ReadKey();
         }
     }
